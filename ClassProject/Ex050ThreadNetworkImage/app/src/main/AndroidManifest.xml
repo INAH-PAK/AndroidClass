@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.inah_wook.ex050threadnetworkimage">
+
+    <!--이 앱에서 인터넷을 사용한다는 것에 대한 퍼미션을 받기-->
+    <!--    한 번이라도 실행 후 이 퍼미션을 주면 갱신이 앱 자체에 자동 갱신이 안됨 !-->
+    <!--    근데 무조건 application 밖에 쓴건 자동갱신 안되기 때문에, 꼭 앱을 삭제하고 다시 런.-->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Ex050ThreadNetworkImage"
+        android:usesCleartextTraffic="true">
+<!--        android:usesCleartextTraffic="true" : HTTP 주소를 사용하고 싶다면 이 속성을 true로 줘야 함 !-->
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

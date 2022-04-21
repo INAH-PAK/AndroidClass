@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.inah_wook.ex26">
+
+<!--    외부 저장소에 대한 정적 퍼미션 받기-->
+<!--    리드는 그냥 읽기만 하는건데 라이트가 되면 당연히 되는거고 리드만 하면 라이트는 당연히 안됨-->
+<!--    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Ex26"
+        android:requestLegacyExternalStorage="true">
+
+<!--        api29 버전 이상에서 외부 저장소 저장기술이 변경되었음. MediaStore -->
+<!--         그래서 예전 방식의 외부 저장소 사용기술을 요청한다는 속성 필요
+       android:requestLegacyExternalStorage="true"   이거 ! -->
+<!--          그래서 외부저장소 쓸땐 이거 한 줄도 꼭 쓰자 ! -->
+
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

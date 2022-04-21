@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="JSON 파싱"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="ggg"
+        android:id="@+id/tv01"/>
+
+    <Button
+        android:id="@+id/btn02"
+        android:backgroundTint="@color/teal_200"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GSON library 파싱"/>
+    <Button
+        android:id="@+id/btn03"
+        android:backgroundTint="@color/teal_200"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="오브젝트를 제이슨으로 ~"/><Button
+        android:id="@+id/btn04"
+        android:backgroundTint="@color/teal_200"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="네트워크에 있는 josn 문서 가져오기 ~"/>
+
+    <Button
+        android:id="@+id/btn05"
+        android:backgroundTint="@color/teal_200"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="jsonArray 파싱해서 jsonObjectArray로 만들기"/>
+
+
+
+
+
+</LinearLayout>
+

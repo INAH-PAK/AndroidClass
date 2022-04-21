@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 데이터 바인딩은 root 료소로 layout 요소가 배치되어야 함. -->
+<!-- layout 은 뷰가 아니며, 이 안에는 딱 두개만 놓임.  -->
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+<!--     딱 두가지만 놓이는데
+            1. 뷰들과 연결된 데이터를 설정.     -->
+<!--    이 데이터를 사용하려면 데이타 클래스 있어야 함, 자바 만들기 ㄱ -->
+<data>
+    <variable
+        name="user"
+        type="com.inah_wook.ex079databainding.User" />
+
+
+
+</data>
+
+<!--     2. 레이아웃 뷰 : 기존의 Root 였던 애들  -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        tools:context=".MainActivity"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{user.name}"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{String.valueOf(user.age)}"
+            android:textColor="@color/black"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:text="데이타 바인딩으로 하는 것"
+            android:onClick="@{user::changeData}"/>
+
+    </LinearLayout>
+
+
+
+
+</layout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<!--옵션 메뉴 만들자 !-->
+<!--    기본적으로 옵션 메뉴는 아이코닉밖에 안되ㅓㅁ. 따로 보여주는거 안해도 됨-->
+    <item android:id="@+id/menu_aa"
+        android:title="공유"
+        android:icon="@android:drawable/ic_menu_share"
+        />
+    <item android:id="@+id/menu_bb"
+        android:title="map"
+        android:icon="@android:drawable/ic_menu_share"
+        />
+    <item android:id="@+id/menu_cc"
+        android:title="dialer"
+        android:icon="@android:drawable/ic_menu_share"
+        />
+</menu>

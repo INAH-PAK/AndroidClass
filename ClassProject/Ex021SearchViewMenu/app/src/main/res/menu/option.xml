@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<!--제목 줄에 넣을 항목 기입-->
+
+<!-- showAsAction : 원래 숨겨져 있었음
+  그리고 메뉴 아이템에 특정한 행동을 하는 뷰를 넣자  :  액션 뷰
+        최신 버전은 qpp에 들어 있음.
+        app:actionViewClass="androidx.appcompat.widget.SearchView
+        이건 최신 버전이라 androidx 임.
+        -->
+<item android:id="@+id/menu_search"
+    android:title="SERCH"
+    app:showAsAction="always"
+    app:actionViewClass="androidx.appcompat.widget.SearchView"/>
+
+</menu>

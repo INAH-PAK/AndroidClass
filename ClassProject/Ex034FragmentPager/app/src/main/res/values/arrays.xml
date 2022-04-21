@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="aaa">
+        <item>서울 특별시</item>
+        <item>대ㅡ아 특별시</item>
+        <item>서울 ㄴㅇㄹ특별시</item>
+        <item>천안시</item>
+        <item>세종 특별시</item>
+        <item>강릉</item>
+        <item>인천 광역시</item>
+    </string-array>
+
+
+
+
+</resources>

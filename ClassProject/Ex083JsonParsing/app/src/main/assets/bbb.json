@@ -1,0 +1,7 @@
+[
+  {"name": "sam", "age": 20,"address" :  { "nation" : "korea", "city" : "seoul"   }},
+  {"name": "robin", "age": 22,"address" :  { "nation" : "france", "city" : "seoul"   }},
+  {"name": "hine", "age": 24,"address" :  { "nation" : "korea", "city" : "cheonan"   }},
+  {"name": "han", "age": 60,"address" :  { "nation" : "korea", "city" : "incheon"   }},
+  {"name": "park", "age": 25,"address" :  { "nation" : "korea", "city" : "seoul"   }}
+]

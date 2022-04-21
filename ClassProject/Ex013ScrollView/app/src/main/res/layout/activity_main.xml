@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 스크롤뷰 예제 ! -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+
+    tools:context=".MainActivity">
+<!-- 화면 넘어가도 스크롤링 안됨.
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="#FF0000"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="#00FF00"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="#0000FF"/>
+-->
+    <!--
+     <ScrollView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+      애석하게 스크롤뷰는 자식뷰의 height 값이 무조건 wrap_content 임. 안에 있는 내용을 감 쌀 만큼.
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="250dp"
+       android:background="#FF0000"/>
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="250dp"
+       android:background="#00FF00"/>
+</ScrollView>-->
+   <!-- 스크롤뷰는 애석하게 자식 뷰를 한개만 !!! 가질 수 있음 !!!  -->
+
+
+    <!-- 만약 여러개의 뷰를 놓고 싶다면 ?
+           뷰 그룹 한개를 놓고 그 안에 배치시킴 -->
+    <!--
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="#FF0000"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="#00FF00"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="#0000FF"/>
+
+    </LinearLayout>
+</ScrollView>
+    -->
+    <!-- 가로 스크롤 뷰 -->
+<!--        자식 뷰의 높ㅇㅣ가 아닌 너비는 wrap_content 가 됨,-->
+    <!--
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+
+         <TextView
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:background="#FF0000"/>
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:background="#00FF00" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:background="#0000FF"/>
+
+
+    </HorizontalScrollView>-->
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/koala"/>
+
+        </HorizontalScrollView>
+
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/downbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="스크롤을 마지막으로"
+
+        />
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="검색된 주소를 지도앱으로 보기"
+/>
+
+
+    <EditText
+        android:id="@+id/et_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+android:hint="주소를 입력하세여"
+        android:inputType="text"
+        android:imeOptions="actionSearch"/>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF333333"
+        android:text="좌표 검색"/>
+
+<!--    숫자 소숫점까지 찍으려면 :  numberDecimal-->
+    <EditText
+        android:id="@+id/et_let"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+       android:hint="위도 입력하세여"
+        android:ems="10"
+        android:inputType="numberDecimal"/>
+    <EditText
+        android:id="@+id/et_lng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="경도 입력하세여"
+        android:ems="10"
+        android:inputType="numberDecimal"/>
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFAAAAFF"
+        android:text="주소 검색"/>
+
+
+</LinearLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 뷰의 크기, 글씨 속성  -->
+<!-- XML은 프로그래밍 언어가 아니므로 키워드 연산 불가. -->
+<!-- 키워드 2가지 : match_parent  - 부모인 액티비티 화면에 맞춤
+                  wrqp_contents - 내용물만 사용
+     단위 1가지 : dp (밀도에 따라 맞추겠다 ~)
+                sp (핸드폰 운영체제의 폰트 사이즈에 맞춰서 같이 크고 작게 하겠다 !   -->
+
+<!-- padding , margine => 여백 설정
+     테투리 설정을 원한다면 => 배경색 설정 -->
+
+
+<!-- 배경 이미지를 만들기 위한 TextView  -->
+
+
+<!--    visibility-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFF00"
+    tools:context=".MainActivity">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="hello"
+    android:textSize="100sp"
+    android:background="#FF0000"
+    android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="100sp"
+
+        android:text="world"
+        android:textColor="#FFFFFF"
+        android:background="#0000FF"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+
+        android:background="@drawable/bono"
+
+        <!-- 텍스트 정렬 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="jffd"
+            android:textSize="150sp"
+            android:background="@color/purple_200"
+            android:padding="60sp"
+            android:gravity="center"/>
+<!-- 뷰 정렬  -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="hi"
+            android:textSize="100sp"
+            android:background="@color/black"
+            android:textColor="#FFFF00"
+            android:padding="10dp"
+            />
+
+
+
+<!-- autoLink : 링크의 유효성을 검사 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoLink="web"
+        android:textSize="80dp"
+        android:text="www.naver.com"
+        android:typeface="monospace"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/swagger"
+        android:text="what ?"
+        android:textSize="80sp"/>
+
+    <!-- 폰트의 국제화 -->
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/my_text"/>
+
+
+
+</LinearLayout>

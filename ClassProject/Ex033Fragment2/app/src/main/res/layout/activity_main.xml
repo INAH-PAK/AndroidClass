@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fragment 추가"/>
+
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fragment 삭제"/>
+<!--    동적으로 (==자바 코드로 만든 ) Fragment가 놓여질 컨테이너의 역할의 뷰그룹이 필요.
+                                   ==  이 위치는 그냥 자릿세 느낌이라고 생각 ㄱ  -->
+
+
+<!--     요기가 FrameLayout  이면 덮어쓰기 됨, 메인 자바에서 만든건,
+            LinearLayout  이묜 옆으로 쭉쭉 늘어남.
+            근데 랩 랩으로 해야 함 ! -->
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </FrameLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

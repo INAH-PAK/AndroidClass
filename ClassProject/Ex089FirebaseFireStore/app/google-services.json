@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "84150131185",
+    "project_id": "ex089firebasefirestoredbwookie",
+    "storage_bucket": "ex089firebasefirestoredbwookie.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:84150131185:android:a083d6336b87e9dd9d4c50",
+        "android_client_info": {
+          "package_name": "com.inah_wook.ex089firebasefirestore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "84150131185-edckcq6oeas00odo1po7439mup39fia5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTRz2n5p9tPf-206eXW8smmq7pHwFBHlY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "84150131185-edckcq6oeas00odo1po7439mup39fia5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

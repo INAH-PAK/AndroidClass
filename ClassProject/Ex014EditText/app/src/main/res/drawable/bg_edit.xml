@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 도형을 만들자 ~  stroke : 윤곽선  -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <stroke android:width="1dp" android:color="#880000FF">  </stroke>
+    <solid android:color="#BBFFFFFF"></solid>
+    <corners android:radius="4dp"></corners>
+
+
+
+
+
+
+
+</shape>

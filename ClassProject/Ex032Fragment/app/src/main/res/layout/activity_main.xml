@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="text View inside mainActivity"
+        android:padding="8dp"
+        android:textColor="#FF333333"/>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv"
+        android:text="text chabge"/>
+
+
+<!--    MyFragment 를 배치하는 방법 1  :  단, 권장하진 않음 . 실무에선 자바로 배치
+                                        수정이 불가해서                        -->
+<!-- 이 Fragment 는 동적으로 repalce, add, remove 등을 못함.                    -->
+<fragment
+    android:id="@+id/fr"
+    android:name="com.inah_wook.ex032fragment.MyFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout="@layout/fragment_my"/>
+
+
+
+</LinearLayout>

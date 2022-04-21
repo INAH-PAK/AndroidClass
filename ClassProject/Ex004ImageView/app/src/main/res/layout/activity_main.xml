@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/flag_korea"
+        android:scaleType="centerInside"
+        android:background="@drawable/ic_launcher_background"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btn_aus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="australia"/>
+    <Button
+        android:id="@+id/btn_bel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="belgium"/>
+    <Button
+        android:id="@+id/btn_can"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="canada"/>
+    <Button
+        android:id="@+id/btn_kor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="korea"/>
+
+    <!-- 이전 / 다음 버튼 옆으로 배치하기   -->
+    <!-- 가로방향 배치의 새로운 LinearLayout을 조그마하게 중첩으로 추가 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_prev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이전"/>
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="다음"
+            android:layout_marginLeft="40dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

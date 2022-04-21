@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/overshoot_interpolator">
+
+<!--     여기 안에서 쓸 수 있는 4가지 에니메이션등   -->
+<!--    첨에 안보이다가 5초 뒤에 스으윽 옴 - duration (자동완성 안됨)-->
+<!--    에니메이션은 뷰마다 따로 줄 수 있으므로, 이 에니메이션 파일은 이미지뷰만 적용 하려고 만든거얌 -->
+    <alpha
+        android:fromAlpha="0"
+        android:toAlpha="1"
+        android:duration="5000"/>
+
+<!--    두바퀴 돌리기 -->
+<!--     android:pivotX="50%" :  아이콘의 왼쪽이 0% , 오른쪽이 100%-->
+<!--     android:pivotX="50%p" : 아예 폰의 왼쪽이 0% , 오른쪽이 100%-->
+    <rotate
+        android:fromDegrees="0"
+        android:toDegrees="720"
+        android:duration="5000"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        />
+<!--     커지기-->
+    <scale
+        android:fromXScale="0"
+        android:toXScale="2.0"
+        android:fromYScale="0"
+        android:toYScale="2"
+        android:pivotY="50"
+        android:pivotX="50"
+        android:duration="5000"/>
+
+
+</set>

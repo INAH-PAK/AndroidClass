@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+
+    android:padding="8dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv"
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="8dp">
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/bonobono"
+            android:scaleType="centerCrop"/>
+    </androidx.cardview.widget.CardView>
+
+<!--        android:maxLines="1" : 한 줄로 아예 정의함. -->
+<!--        android:ellipsize="end" : 마지막에 짤리면 ...으로 마무리해줌-->
+<TextView
+    android:id="@+id/tv_title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="세계최고 보노보노 android development "
+    android:textStyle="bold"
+    android:textColor="#077B8B"
+    android:layout_toRightOf="@id/cv"
+    android:layout_marginLeft="12dp"
+    android:maxLines="1"
+    android:ellipsize="end"
+    android:padding="4dp"
+    />
+            <!--     dp :  폰 폰트를 키워도 안커짐. sp는 같이 커짐.    -->
+            <!--            android:layout_alignLeft="@id/tv_title" : 마진, 오른쪽 이런거 안해도 됨-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="안드로이드 앱을 만들어 드립니다. 가격 딜은 이메일로 문의 주세요."
+                    android:textSize="12dp"
+                    android:layout_below="@id/tv_title"
+                    android:layout_alignLeft="@id/tv_title"
+                    android:id="@+id/tv_msg"
+                    android:maxLines="3"
+                    android:ellipsize="end"
+                    />
+
+    <TextView
+        android:id="@+id/vt_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_title"
+        android:layout_alignParentBottom="true"
+        android:text="5,000,000"
+        android:textColor="#FFFF0000"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+<!--            android:textOn="" : 안쓰면 on off로 글씨 써짐-->
+    <ToggleButton
+        android:id="@+id/tv_fav"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/ic_favorite_selecter"
+        android:textOff=""
+        android:textOn="" />
+
+
+
+</RelativeLayout>

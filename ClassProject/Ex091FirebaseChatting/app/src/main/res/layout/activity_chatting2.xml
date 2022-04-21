@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E3F4F9F9"
+    tools:context=".ChattingActivity">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/recycler"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="vertical"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="4dp"
+        android:background="@color/teal_200"
+        >
+        <EditText
+            android:id="@+id/et"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_et"
+            android:padding="10dp"
+            android:hint="input masage hire"
+            android:inputType="textMultiLine"
+            android:maxLines="3"
+            />
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/white"
+            android:layout_marginLeft="8dp"
+            android:text="SEND"
+            android:layout_toRightOf="@id/et"
+            android:textColor="@color/black"/>
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</LinearLayout>

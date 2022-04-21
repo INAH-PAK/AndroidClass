@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bnv_menu_tab1"
+        android:title="TAP 1"
+        android:icon="@mipmap/ic_launcher"/>
+    <item
+        android:id="@+id/bnv_menu_tab2"
+        android:title="TAP 2"
+        android:icon="@mipmap/ic_launcher"/>
+    <item
+        android:id="@+id/bnv_menu_tab3"
+        android:title="TAP 3"
+        android:icon="@mipmap/ic_launcher"/>
+
+</menu>

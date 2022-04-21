@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+
+    <!--intputType 테스트
+            : EditText 는 사용자가 입력하면 받는 기능임 ! -->
+    <!--   inputType :  (한 줄만 입력 받음.)
+                        텍스트  - 쿼티키패드
+                        Number - 숫자만
+                       phone -  전화번호 키패드
+                       EmailAddress - @ 있는 쿼티 키패드 . 폰마다 .com 주는것도 있음.
+                       Password - 글자쓰면 *로 가려짐
+                       CapCh - 혼자 공부 . . .-->
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="input Data"
+        android:inputType="textCapSentences"/>
+
+        <!--  여러 줄 입력 : Lines  -->
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="3"
+        android:hint="여러줄 입력"
+        android:inputType="textMultiLine"
+        android:gravity="top"/>
+
+<!--    여러 줄 입력 : max Lines-->
+
+<EditText
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:maxLines="3"
+android:hint="여러줄 입력"
+android:inputType="textMultiLine"
+android:gravity="top"/>
+
+<!--   글자수 만큼의 뷰너비를 지정하기    :  ems -내가 설정한 값에 대충 맞춰서 크기 지정해줌. -->
+<!--    최대 글자 수 지정  :  maxLength  -->
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="3"
+        android:inputType="text"
+        android:gravity="center"
+        android:maxLength="3"/>
+
+
+<!--    배경을 지정하면 밑줄은 안보임 !  : 보통 여러줄 입력엔 배경을 줌. 밑줄말고
+           픽셀로 그림을 그리는 레스터 이미지 : jpg . . .
+           글씨로 그림을 그린 벡터 그래픽  :  이걸로 우리가 써야 함 !! 도형 !! 폰마다 화면 픽셀 다르니께-->
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:inputType="textMultiLine"
+        android:background="@drawable/bg_edit"
+        android:padding="8dp"
+        android:gravity="top"
+        android:hint="내용 입력" />
+
+<!--    폰 번호 입력 UI 만들어보기 ! -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:background="@drawable/bg_edit"
+            android:ems="3"
+            android:gravity="center"
+            android:hint="010"
+            android:inputType="phone"
+            android:maxLength="3"
+            android:padding="8dp" />
+
+        <EditText
+            android:id="@+id/et02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:background="@drawable/bg_edit"
+            android:ems="4"
+            android:gravity="center"
+            android:hint="1234"
+            android:inputType="phone"
+            android:maxLength="4"
+            android:padding="8dp" />
+
+        <EditText
+            android:id="@+id/et03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:background="@drawable/bg_edit"
+            android:ems="4"
+            android:gravity="center"
+            android:hint="1234"
+            android:inputType="phone"
+            android:maxLength="4"
+            android:padding="8dp" />
+
+        <!-- 구분선 같은걸 하고 싶다면 그냥 뷰 써라 ~-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+
+        </View>
+
+        <!-- 아이콘이 있는 EditText도 만들 수 있음.-->
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_baseline_face_24"
+            android:hint=" 아이콘이 있는 EditText "
+            android:inputType="text">
+
+        </EditText>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

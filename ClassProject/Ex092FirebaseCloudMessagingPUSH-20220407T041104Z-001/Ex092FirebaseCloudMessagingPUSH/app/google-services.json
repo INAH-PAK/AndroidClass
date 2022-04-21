@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "566921831522",
+    "project_id": "ex92fcmpushmrhi",
+    "storage_bucket": "ex92fcmpushmrhi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:566921831522:android:286a3e67413ed528cc9d3b",
+        "android_client_info": {
+          "package_name": "com.mrhi2022.ex092firebasecloudmessagingpush"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "566921831522-i3lgjh1hrv63p37uhu8hg4b1847bkt53.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAi6WB6U6YH3aSgcav3Scm3mGiaQ50KVhA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "566921831522-i3lgjh1hrv63p37uhu8hg4b1847bkt53.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

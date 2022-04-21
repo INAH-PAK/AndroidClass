@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="4dp">
+
+<!--   구글 맵은 지도를 보여주는 뷰 : map view 를 직접 배치하지 않음.-->
+<!--    지도뷰를 가진 프레그먼트가 이미 존재함.  이걸 불러와서 지도를 보여주는 방식으로 설정 -->
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:id="@+id/map"
+        />
+
+
+<!--    개발자가 만든 프레금ㄴ트 안에 구글 지도 프레그먼트를 배치하기 -->
+    <fragment
+        android:id="@+id/frg_my"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+     android:layout_weight="1"
+        android:layout_marginTop="16dp"
+        android:name="com.inah_wook.ex068googlemap.MyFragment"/>
+
+
+
+
+</LinearLayout>

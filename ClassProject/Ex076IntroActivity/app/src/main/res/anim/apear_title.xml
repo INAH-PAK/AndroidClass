@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/bounce_interpolator">
+<!-- 다른 애니메이샨과 연동가능 : interpolator (자동완성 안됨) -->
+    <translate
+        android:fromXDelta="0"
+        android:toXDelta="0"
+        android:fromYDelta="-30%p"
+        android:toYDelta="0%p"
+        android:duration="4000"/>
+</set>

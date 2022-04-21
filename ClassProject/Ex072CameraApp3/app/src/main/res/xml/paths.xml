@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--     외부 저장소 중에서 앱 고유 영역이 아닌 곳 공개하겠다. : 앱 지우면 같이 지워지는 곳이 아닌 곳 -->
+<external-path
+    name="external"
+    path="."/>
+
+    <external-path
+        name="external_file"
+        path="."/>
+
+
+
+</paths>

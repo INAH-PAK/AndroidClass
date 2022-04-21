@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+<!--    Youtube Player View 는 반드시 YoutubeBasePlayerView 에서만 플레이 해야 함      -->
+<!--    근데 Youtube Player View  는 존나 옛날꺼라서 이거쓰면 androidx하나도 못씀 좆구림  -->
+<!--    그래서 보통 Youtube Player Fragment를 배치하여 씀.                            -->
+    <fragment
+        android:id="@+id/youtube_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="com.google.android.youtube.player.YouTubePlayerFragment"    />
+    <fragment
+        android:id="@+id/youtube_fragment2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="com.google.android.youtube.player.YouTubePlayerFragment"    />
+
+<!--     동영상의 썸네일 이미지만 보여주는 뷰-->
+    <com.google.android.youtube.player.YouTubeThumbnailView
+        android:id="@+id/youtube_thum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+</LinearLayout>

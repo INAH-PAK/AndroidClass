@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="input data"
+        android:inputType="text"
+        android:id="@+id/et"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="save data"
+        android:id="@+id/btn_save"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="load data"
+        android:id="@+id/btn_load"/>
+
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="show data"
+        android:textColor="@color/black"
+        android:padding="8dp"/>
+
+<!--     외부 메모리 중에 앱에게 할당된 폴더말고, 다른 공간에 저장하기 Download 폴더 등등 공공폴더.-->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="동적 퍼미션이 필요한 외부 저장소"
+        android:id="@+id/btn3"
+        android:backgroundTint="@color/black"/>
+
+
+
+
+</LinearLayout>

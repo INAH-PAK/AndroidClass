@@ -1,0 +1,28 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+//프로젝트 수준 설정
+
+// 일단 buildscript {} 구문은 반드시 맨 처음ㅇ[ 있어야함.plugins같은것들 보다 맨 위!
+// 그 다음, 가이드에 있던 repositories는 settings.gradle 에 작성되어 있음
+// 그래서  repositories 지우기.
+// 그 다음 씽크나우~
+buildscript {
+//    repositories {
+//        // Check that you have the following line (if not, add it):
+//        google()  // Google's Maven repository
+//
+//    }
+    dependencies {
+//        ...
+        // Add this line
+        classpath 'com.google.gms:google-services:4.3.10'
+
+    }
+}
+plugins {
+    id 'com.android.application' version '7.1.1' apply false
+    id 'com.android.library' version '7.1.1' apply false
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

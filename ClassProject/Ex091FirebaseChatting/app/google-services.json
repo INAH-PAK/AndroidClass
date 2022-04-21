@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "159096097577",
+    "project_id": "ex091firebasechatting",
+    "storage_bucket": "ex091firebasechatting.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159096097577:android:84605ad854acd2cacb8538",
+        "android_client_info": {
+          "package_name": "com.inah_wook.ex091firebasechatting"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "159096097577-p6c4gnn8umvcretpk7gi3opi30j4104e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFkvPm9cAMhKPwXEpVKDCRm0piHr7QMgQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "159096097577-p6c4gnn8umvcretpk7gi3opi30j4104e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

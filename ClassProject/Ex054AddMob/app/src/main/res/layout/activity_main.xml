@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<!--   [ 1] 배너광고 뷰  -->
+<!--   adSize  : https://developers.google.com/admob/android/banner#banner_sizes 참고 -->
+
+
+    <!--    필요할 때 샘플 유닛 아이디 ca-app-pub-3940256099942544/6300978111 -->
+    <!--    https://developers.google.com/admob/android/banner#always_test_with_test_ads -->
+    <!--    액자만 만드는 곳 -->
+    <!--    하단 설정하는 이유는 잘못해서 눌르라고, , ,  에잌 !  -->
+    <!--    설정은 자바가서 함 ~ -->
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adview"
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-1927437183452279/8761723479"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+    </com.google.android.gms.ads.AdView>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="전면 광고"/>
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="16dp"
+        android:text="보상형 광고"/>
+
+
+
+</RelativeLayout>

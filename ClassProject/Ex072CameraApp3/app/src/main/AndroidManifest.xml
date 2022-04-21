@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.inah_wook.ex072cameraapp3">
+<!-- 외부 저장소에 대판 퍼미션 :최신 방식 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <!-- 외부 저장소에 대판 퍼미션 :옜날 방식 : requestLegacyExternalStorage -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Ex072CameraApp3"
+
+        android:requestLegacyExternalStorage="true">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+<!--         FileProvider 를 등록하기    -->
+        <!-- 무조건 이 식별자 authorities 는 절!대 이 앱의 모든 authorities 는 중복되면 안됨. -->
+<!--      그래서 패키지명을 줌. 안겹치게   -->
+<!--        exported :  다른 앱에서 이 Provider 객체를 사용 못하도록 -->
+<!--        Provider 가 제공하는 Uri 는 공유해야 함 ~ -->
+<!--        grantUriPermissions :  이 앱에서 만든 uri 를 다른 앱에서 쓰게 가능 ~ -->
+<!--         근데 나만 쓰고 픈 다른 경로의 uri는 공개 안하고 싶을 땐 어캄? BB-->
+
+        <provider
+            android:authorities="com.inah_wook.ex072cameraapp3.FileProvider"
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+<!--            BB. Provider 가 공개 할 파일의 경로 (path)를 지정하자 ~  -->
+<!--            "android.support.FILE_PROVIDER_PATH" 는 지정되어있는 글자고, 디벨로퍼 사이트 들어가면 알 수 있으 ~ -->
+<!--             보통이 파일의 경로들은 xml로 저장 함.-->
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS"/>
+
+        </provider>
+
+    </application>
+
+</manifest>
