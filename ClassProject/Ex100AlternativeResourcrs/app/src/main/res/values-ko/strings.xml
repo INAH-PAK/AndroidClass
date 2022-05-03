@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">예제 100. 대체리소스</string>
+    <string name="title">안녕하세요</string>
+    <string name="massage">반가워요</string>
+</resources>
