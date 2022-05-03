@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Ex097KotlinBottomNavigationView</string>
+    <string name="text_label_1">홈</string>
+    <string name="text_label_2">게시판</string>
+    <string name="text_label_3">텃밭</string>
+    <string name="text_label_4">모하지</string>
+
+
 </resources>

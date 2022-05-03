@@ -15,9 +15,6 @@ import androidx.recyclerview.widget.RecyclerView
 class MuAdapter constructor(val context: Context,var items: MutableList<Item>): RecyclerView.Adapter<MuAdapter.VH>(){
 
 
-
-
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): VH {
         val inflator: LayoutInflater = LayoutInflater.from(context)
         val itemView = inflator.inflate(R.layout.recycler_item, parent, false )
