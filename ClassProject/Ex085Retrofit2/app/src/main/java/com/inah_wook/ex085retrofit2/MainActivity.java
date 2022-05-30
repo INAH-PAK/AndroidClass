@@ -36,8 +36,8 @@ public class MainActivity extends AppCompatActivity {
     ActivityMainBinding binding;
 
     @Override
-    protected void onCreate(avedInstanceState) {
-        super.onCreate(savedInstanceState);Bundle s
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot()); // binding의 가장 최상위 뷰를 가져옴~ LinerLayout ~~~
 
@@ -164,6 +164,7 @@ binding.tv.setText("에러 !" + t);
 
     }
 
+    // 난 이거 !!
     private void clickBtn06() {
         // POST 방식으로 Item 객체를 서버에 전달하기
 

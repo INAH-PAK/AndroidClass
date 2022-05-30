@@ -238,20 +238,24 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        AlertDialog dialog = builder.create();
-
-        //다이얼로그의 커스텀뷰안에 있는 이미지를 클릭시에 반응하기
-        ImageView iv= (ImageView) dialog.findViewById(R.id.dialog_img);
-
-
-        iv.setOnClickListener(new View.OnClickListener() {
+        btn5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                iv.setImageResource(R.drawable.ms17);
+                AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+                AlertDialog dialog = builder.create();
+
+                //다이얼로그의 커스텀뷰안에 있는 이미지를 클릭시에 반응하기
+                ImageView iv= (ImageView) dialog.findViewById(R.id.dialog_img);
+
+                iv.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        iv.setImageResource(R.drawable.ms17);
+                    }
+                });
             }
         });
+
 
 
 

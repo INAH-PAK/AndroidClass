@@ -49,7 +49,7 @@ public class MarketAdapter extends RecyclerView.Adapter<MarketAdapter.VH> {
         // 근데 글라이드는 load("http://~~~/파일경로") 이걸 넣어야 읽히잖아?
         // 그래서 호스트주소가 있는 절대경로를 만들어야 함.
         //
-        String imgUrl="http://webserver.dothome.co.kr/05/"+item.file;
+        String imgUrl="http://commit.dothome.co.kr/05/"+item.file;
         Glide.with(context).load(imgUrl).into(holder.binding.iv);
         Log.i("이미지 링크 가능?",imgUrl);
 

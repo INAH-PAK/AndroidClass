@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="예 아니오 단순 Alert Dialog"
-        android:textAllCaps="false"/>
+        android:textAllCaps="false" />
 
     <Button
         android:id="@+id/btn2"
@@ -29,14 +29,12 @@
         android:text="싱글초이스 다이얼로그 " />
 
 
-
     <Button
         android:id="@+id/btn4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/btn3"
         android:text="멀티플 초이스 다이얼로그 " />
-
 
 
     <Button

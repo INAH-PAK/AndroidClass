@@ -67,7 +67,6 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void run() {
 
-
                     while(gauge<100){
 
                         gauge++;

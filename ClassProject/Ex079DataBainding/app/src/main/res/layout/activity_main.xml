@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<!-- 데이터 바인딩은 root 료소로 layout 요소가 배치되어야 함. -->
+<!-- 데이터 바인딩은 root 요소로 layout 요소가 배치되어야 함. -->
 <!-- layout 은 뷰가 아니며, 이 안에는 딱 두개만 놓임.  -->
 <layout
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -14,8 +14,6 @@
     <variable
         name="user"
         type="com.inah_wook.ex079databainding.User" />
-
-
 
 </data>
 
