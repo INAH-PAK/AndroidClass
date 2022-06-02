@@ -23,7 +23,7 @@ class LoginActivity : AppCompatActivity() {
         }
         //3. ㅇ메일 로그인
         binding.layoutEmailLogin.setOnClickListener {
-
+            binding.tvSignUp.text = "fff"
         }
 
         //4. 간편로그인 버튼들
