@@ -31,6 +31,13 @@ class MainActivity : AppCompatActivity() {
             var msg:String = binding.et.text.toString()
             binding.wv.loadUrl("javascript:setMessage('$msg')")
 
+            // - PhoneGqp -> Adobe( 유료 ) / Codova (무료 : 개느림)
+
+            // Anguler , React , Vue...   합친게 =>  Ionic
+            // Ionic 을 보고 페북이 배아파서 React Navive 만듬.
+            // React Navive 은 Ionic의 단점인 속도를 해결
+            // How ? ==> WebView를 아예 없엠.
+            // 근데 이번엔 Vue가 배아파서 Flutter 만듬.
 
 
 
