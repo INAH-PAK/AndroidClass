@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appbar"
+        android:background="@color/white">
+
+<!--        layout_scrollFlags : 앱바 레이아웃 안에 있는 애들만 쓸 수 있는 속성임. 스크롤 속성-->
+<!--         enterAlways : 밑으로 쭉 가면 슝 올라옴.-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/btn_search"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_centerVertical="true"
+                app:cardElevation="2dp"
+                app:cardCornerRadius="8dp">
+
+<!--                android:imeOptions="actionSearch" : 키패드 올라오면 완료버튼이 검색모양 -->
+                <EditText
+                    android:id="@+id/et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="16dp"
+                    android:hint="검색어"
+                    android:textSize="14sp"
+                    android:maxLength="12"
+                    android:inputType="text"
+                    android:imeOptions="actionSearch"/>
+
+            </androidx.cardview.widget.CardView>
+            <Button
+                android:id="@+id/btn_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="Search"
+                android:layout_centerVertical="true"
+                android:padding="16dp"
+                android:layout_marginEnd="16dp"/>
+
+        </RelativeLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+<!--     NestedScrollView 나 RecyclerView 만 코디너리에 쓸 수 있음-->
+<!--     맨날 리니어 했으니까 오늘은 그리드-->
+<!--    vertical : 지그재그로 카운트 됨.  -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        android:orientation="vertical"
+        app:spanCount="2">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
